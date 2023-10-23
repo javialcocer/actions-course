@@ -1,0 +1,8 @@
+name: Reto 5 - Aprende a usar las Variables de Entorno
+on: [push, pull_request]
+jobs:
+  Variables:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo getting vars from repo configuration
+        run: echo "the owner repo is: ${{vars}}"
